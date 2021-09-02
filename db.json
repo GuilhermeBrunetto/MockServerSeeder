@@ -1,8 +1,8 @@
 {
-  "pais": [
+  "territorio": [
     {
       "id": 1,
-      "pais": "Chicago",
+      "nome": "Chicago",
       "bolsa": "(CME)",
       "produtos": {
         "soja": [
@@ -75,50 +75,50 @@
     },
     {
       "id": 2,
-      "pais": "Brasil",
+      "nome": "Brasil",
       "bolsa": "(B3)",
       "produtos": {
         "soja": [
           {
             "contrato": "SEP 2021",
-            "US$/bu": "1.314,25",
+            "US$/sc": "1.314,25",
             "variacao": "-45,00"
           },
           {
             "contrato": "NOV 2021",
-            "US$/bu": "1.305,25",
+            "US$/sc": "1.305,25",
             "variacao": "-45,00"
           },
           {
             "contrato": "JAN 2022",
-            "US$/bu": "1.311,00",
+            "US$/sc": "1.311,00",
             "variacao": "-45,00"
           },
           {
             "contrato": "MAY 2022",
-            "US$/bu": "1.318,25",
+            "US$/sc": "1.318,25",
             "variacao": "-45,00"
           }
         ],
         "milho": [
           {
             "contrato": "SEP 2021",
-            "US$/bu": "1.314,25",
+            "US$/sc": "1.314,25",
             "variacao": "-45,00"
           },
           {
             "contrato": "NOV 2021",
-            "US$/bu": "1.305,25",
+            "US$/sc": "1.305,25",
             "variacao": "-45,00"
           },
           {
             "contrato": "JAN 2022",
-            "US$/bu": "1.311,00",
+            "US$/sc": "1.311,00",
             "variacao": "-45,00"
           },
           {
             "contrato": "MAY 2022",
-            "US$/bu": "1.318,25",
+            "US$/sc": "1.318,25",
             "variacao": "-45,00"
           }
         ]
