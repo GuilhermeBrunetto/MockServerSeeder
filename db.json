@@ -1,0 +1,211 @@
+{
+  "pais": [
+    {
+      "id": 1,
+      "pais": "Chicago",
+      "bolsa": "(CME)",
+      "produtos": {
+        "soja": [
+          {
+            "contrato": "SEP 2021",
+            "US$/bu": "1.314,25",
+            "variacao": "-45,00"
+          },
+          {
+            "contrato": "NOV 2021",
+            "US$/bu": "1.305,25",
+            "variacao": "-45,00"
+          },
+          {
+            "contrato": "JAN 2022",
+            "US$/bu": "1.311,00",
+            "variacao": "-45,00"
+          },
+          {
+            "contrato": "MAY 2022",
+            "US$/bu": "1.318,25",
+            "variacao": "-45,00"
+          }
+        ],
+        "premio": [
+          {
+            "contrato": "SEP 2021",
+            "US$/bu": "1.314,25",
+            "variacao": "-45,00"
+          },
+          {
+            "contrato": "NOV 2021",
+            "US$/bu": "1.305,25",
+            "variacao": "-45,00"
+          },
+          {
+            "contrato": "JAN 2022",
+            "US$/bu": "1.311,00",
+            "variacao": "-45,00"
+          },
+          {
+            "contrato": "MAY 2022",
+            "US$/bu": "1.318,25",
+            "variacao": "-45,00"
+          }
+        ],
+        "milho": [
+          {
+            "contrato": "SEP 2021",
+            "US$/bu": "1.314,25",
+            "variacao": "-45,00"
+          },
+          {
+            "contrato": "NOV 2021",
+            "US$/bu": "1.305,25",
+            "variacao": "-45,00"
+          },
+          {
+            "contrato": "JAN 2022",
+            "US$/bu": "1.311,00",
+            "variacao": "-45,00"
+          },
+          {
+            "contrato": "MAY 2022",
+            "US$/bu": "1.318,25",
+            "variacao": "-45,00"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "pais": "Brasil",
+      "bolsa": "(B3)",
+      "produtos": {
+        "soja": [
+          {
+            "contrato": "SEP 2021",
+            "US$/bu": "1.314,25",
+            "variacao": "-45,00"
+          },
+          {
+            "contrato": "NOV 2021",
+            "US$/bu": "1.305,25",
+            "variacao": "-45,00"
+          },
+          {
+            "contrato": "JAN 2022",
+            "US$/bu": "1.311,00",
+            "variacao": "-45,00"
+          },
+          {
+            "contrato": "MAY 2022",
+            "US$/bu": "1.318,25",
+            "variacao": "-45,00"
+          }
+        ],
+        "milho": [
+          {
+            "contrato": "SEP 2021",
+            "US$/bu": "1.314,25",
+            "variacao": "-45,00"
+          },
+          {
+            "contrato": "NOV 2021",
+            "US$/bu": "1.305,25",
+            "variacao": "-45,00"
+          },
+          {
+            "contrato": "JAN 2022",
+            "US$/bu": "1.311,00",
+            "variacao": "-45,00"
+          },
+          {
+            "contrato": "MAY 2022",
+            "US$/bu": "1.318,25",
+            "variacao": "-45,00"
+          }
+        ]
+      }
+    }
+  ],
+  "pedidos": [
+    {
+      "id": 1,
+      "status": "Pedido Aprovado",
+      "data": "22/03/2021",
+      "produtor": "20586 | Produtor X",
+      "fazenda": "Fazenda Município",
+      "valor": "12 sacas"
+    },
+    {
+      "id": 2,
+      "status": "Rascunho",
+      "data": "22/03/2021",
+      "produtor": "20586 | Produtor X",
+      "fazenda": "Fazenda Município",
+      "valor": "12 sacas"
+    },
+    {
+      "id": 3,
+      "status": "Ajustar Valores",
+      "data": "22/03/2021",
+      "produtor": "20586 | Produtor X",
+      "fazenda": "Fazenda Município",
+      "valor": "12 sacas"
+    },
+    {
+      "id": 4,
+      "status": "Pedido Concluído",
+      "data": "22/03/2021",
+      "produtor": "20586 | Produtor X",
+      "fazenda": "Fazenda Município",
+      "valor": "12 sacas"
+    },
+    {
+      "id": 5,
+      "status": "Em Análise",
+      "data": "22/03/2021",
+      "produtor": "20586 | Produtor X",
+      "fazenda": "Fazenda Município",
+      "valor": "12 sacas"
+    },
+    {
+      "id": 6,
+      "status": "Em Análise",
+      "data": "22/03/2021",
+      "produtor": "20586 | Produtor X",
+      "fazenda": "Fazenda Município",
+      "valor": "12 sacas"
+    },
+    {
+      "id": 7,
+      "status": "Em Análise",
+      "data": "22/03/2021",
+      "produtor": "20586 | Produtor X",
+      "fazenda": "Fazenda Município",
+      "valor": "12 sacas"
+    }
+  ],
+  "profile": [
+    {
+      "id": 1,
+      "name": "Joao Silva",
+      "email": "joao.silva@corteva.com"
+    }
+  ],
+  "produtor": [
+    {
+      "id": 1,
+      "nome": "Produtor X",
+      "cnpj": "00.000.000/0001-00",
+      "localizacao": "Município X",
+      "contato": "produtorx@gmail.com",
+      "telefone": "(00) 0000-0000"
+    },
+    {
+      "id": 2,
+      "nome": "Produtor P",
+      "cnpj": "00.000.000/0001-00",
+      "localizacao": "Município X",
+      "contato": "produtorp@gmail.com",
+      "telefone": "(00) 0000-0000"
+    }
+  ]
+}

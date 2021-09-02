@@ -1,0 +1,12 @@
+{
+  "name": "mock-server",
+  "version": "1.0.0",
+  "description": "mock API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx json-server db.json -p 1234 --watch"
+  },
+  "keywords": [],
+  "author": "Rafael Medeiros",
+  "license": "ISC"
+}
