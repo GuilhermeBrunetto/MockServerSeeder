@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JFAenbT6P/2SKgEDWuOUlGi9vZN5JuyhqEpAiOaE0Mjk4LbHRKizbNYG71L6ia4A2+PRih6rfrfJPyt2ULLGow==",
+  "dgSpecHash": "USlvkLr+9ApB1uk6zXuY1/R2lnupTlMjrJGrZUvQRIDEOuERotVRtDTDf67Yt48yJAcp6aa4uZTWIYQlU8C7KA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DR423DX\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\DR423DX\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

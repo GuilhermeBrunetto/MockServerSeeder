@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\API.csproj": {}
+    "C:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\API.csproj": {
+    "C:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\API.csproj",
+        "projectPath": "C:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\API.csproj",
         "packagesPath": "C:\\Users\\DR423DX\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\obj\\",
+        "outputPath": "C:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DR423DX\\AppData\\Roaming\\NuGet\\NuGet.Config"
