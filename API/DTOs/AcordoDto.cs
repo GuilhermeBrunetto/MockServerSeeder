@@ -12,6 +12,6 @@ namespace API.DTOs
         [Required]
         public string Variacao { get; set; }
         [Required]
-        public int GraoId { get; set; }
+        public int ProdutoId { get; set; }
     }
 }

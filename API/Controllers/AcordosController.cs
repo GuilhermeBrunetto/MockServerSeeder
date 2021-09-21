@@ -21,10 +21,23 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> GetAllAcordos()
+        public async Task<ActionResult> GetAllAcordos([FromQuery] int produtoId)
         {
-            var acordos = await _acordoRepository.GetAllAsync();
-            return Ok(_mapper.Map<List<AcordoDto>>(acordos));
+            IEnumerable<Acordo> acordos = null;
+            // se n especificar só retorna a lista full
+            if (produtoId <= 0) 
+            {
+                acordos = await _acordoRepository.GetAllAsync();
+                return Ok(_mapper.Map<List<AcordoDto>>(acordos));
+            }
+            else
+            {
+                // se especificar um graoId dá pra chamar a funcao de pegar acordos by grao
+                var acordosByGrao = await _acordoRepository.GetAcordosByProdutoAsync(produtoId);
+                return Ok(_mapper.Map<List<AcordoDto>>(acordosByGrao));
+            }
+
+
         }
 
         [HttpGet]
@@ -82,7 +95,7 @@ namespace API.Controllers
             if (deleteResult)
                 return Ok("Acordo deleted succesfully");
 
-            return BadRequest("Couldn't delete the grao");
+            return BadRequest("Couldn't delete the acordo");
         }
 
     }

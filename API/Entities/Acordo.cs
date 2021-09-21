@@ -13,7 +13,7 @@ namespace API.Entities
         [Required]
         public string Variacao { get; set; }
         [Required]
-        public int GraoId { get; set; }
-        public Grao Grao { get; set; }
+        public int ProdutoId { get; set; }
+        public Produto Produto { get; set; }
     }
 }

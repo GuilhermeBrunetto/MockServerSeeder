@@ -33,7 +33,7 @@ namespace API
                 options.UseSqlite(_config.GetConnectionString("DefaultConnection"));
             });
             services.AddScoped<ITerritorioRepository, TerritorioRepository>();
-            services.AddScoped<IGraoRepository, GraoRepository>();
+            services.AddScoped<IProdutoRepository, ProdutoRepository>();
             services.AddScoped<IAcordoRepository, AcordoRepository>();
             services.AddControllers();
             services.AddAutoMapper(typeof(Startup));

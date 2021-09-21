@@ -7,7 +7,7 @@ namespace API.Data.Repositories
 {
     public abstract class BaseRepository<T> : IRepository<T> where T : class
     {
-        private readonly DataContext _context;
+        protected readonly DataContext _context;
         public BaseRepository(DataContext context)
         {
             _context = context;

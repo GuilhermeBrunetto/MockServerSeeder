@@ -11,7 +11,6 @@ namespace API.Data
 
         public DbSet<Territorio> Territorios { get; set; }
         public DbSet<Produto> Produtos { get; set; }
-        public DbSet<Grao> Graos { get; set; }
         public DbSet<Acordo> Acordos { get; set; }
         // public DbSet<Pedido> Pedidos { get; set; }
         // public DbSet<Profile> Profiles { get; set; }

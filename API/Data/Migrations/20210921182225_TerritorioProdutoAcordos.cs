@@ -2,22 +2,17 @@
 
 namespace API.Data.Migrations
 {
-    public partial class TerritorioProdutos : Migration
+    public partial class TerritorioProdutoAcordos : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<int>(
-                name: "ProdutoId",
-                table: "Graos",
-                type: "INTEGER",
-                nullable: true);
-
             migrationBuilder.CreateTable(
                 name: "Produtos",
                 columns: table => new
                 {
                     ProdutoId = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Nome = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -36,6 +31,28 @@ namespace API.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Territorios", x => x.TerritorioId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Acordos",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Contrato = table.Column<string>(type: "TEXT", nullable: false),
+                    Moeda = table.Column<string>(type: "TEXT", nullable: false),
+                    Variacao = table.Column<string>(type: "TEXT", nullable: false),
+                    ProdutoId = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Acordos", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Acordos_Produtos_ProdutoId",
+                        column: x => x.ProdutoId,
+                        principalTable: "Produtos",
+                        principalColumn: "ProdutoId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -63,29 +80,20 @@ namespace API.Data.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Graos_ProdutoId",
-                table: "Graos",
+                name: "IX_Acordos_ProdutoId",
+                table: "Acordos",
                 column: "ProdutoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_TerritorioProduto_ProdutoId",
                 table: "TerritorioProduto",
                 column: "ProdutoId");
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_Graos_Produtos_ProdutoId",
-                table: "Graos",
-                column: "ProdutoId",
-                principalTable: "Produtos",
-                principalColumn: "ProdutoId",
-                onDelete: ReferentialAction.Restrict);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_Graos_Produtos_ProdutoId",
-                table: "Graos");
+            migrationBuilder.DropTable(
+                name: "Acordos");
 
             migrationBuilder.DropTable(
                 name: "TerritorioProduto");
@@ -95,14 +103,6 @@ namespace API.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Territorios");
-
-            migrationBuilder.DropIndex(
-                name: "IX_Graos_ProdutoId",
-                table: "Graos");
-
-            migrationBuilder.DropColumn(
-                name: "ProdutoId",
-                table: "Graos");
         }
     }
 }
