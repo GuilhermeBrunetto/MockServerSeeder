@@ -193,18 +193,6 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Sqlite.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/5.0.9": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "5.0.9"
-        },
-        "compile": {
-          "lib/netstandard2.1/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/_._": {}
-        }
-      },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
         "type": "package",
         "build": {
@@ -852,30 +840,6 @@
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Sqlite.xml",
         "microsoft.entityframeworkcore.sqlite.core.5.0.9.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlite.core.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.Tools/5.0.9": {
-      "sha512": "BdNfn6IzyD6r6XpjnOn7HuWKryVzT6TnDIH8MZLD3d/wLG24V0BYB1Dyr6wnAqgGXXCZxJf77YES5nobge56aA==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/5.0.9",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "lib/netstandard2.1/_._",
-        "microsoft.entityframeworkcore.tools.5.0.9.nupkg.sha512",
-        "microsoft.entityframeworkcore.tools.nuspec",
-        "tools/EntityFrameworkCore.PS2.psd1",
-        "tools/EntityFrameworkCore.PS2.psm1",
-        "tools/EntityFrameworkCore.psd1",
-        "tools/EntityFrameworkCore.psm1",
-        "tools/about_EntityFrameworkCore.help.txt",
-        "tools/init.ps1",
-        "tools/net461/any/ef.exe",
-        "tools/net461/win-x86/ef.exe",
-        "tools/netcoreapp2.0/any/ef.dll",
-        "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
       ]
     },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
@@ -1573,7 +1537,6 @@
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 5.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.9",
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.9",
-      "Microsoft.EntityFrameworkCore.Tools >= 5.0.9",
       "Swashbuckle.AspNetCore >= 5.6.3",
       "System.Text.Json >= 5.0.2"
     ]
@@ -1584,11 +1547,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "c:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\API.csproj",
+      "projectPath": "C:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\API.csproj",
       "packagesPath": "C:\\Users\\DR423DX\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\obj\\",
+      "outputPath": "C:\\Users\\DR423DX\\ProjetoCorteva\\mock-server\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DR423DX\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1630,12 +1593,6 @@
             "version": "[5.0.9, )"
           },
           "Microsoft.EntityFrameworkCore.Sqlite": {
-            "target": "Package",
-            "version": "[5.0.9, )"
-          },
-          "Microsoft.EntityFrameworkCore.Tools": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.9, )"
           },

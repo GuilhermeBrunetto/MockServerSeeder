@@ -6,7 +6,7 @@ namespace API.Interfaces
 {
     public interface ITerritorioRepository : IRepository<Territorio>
     {
-
+        Task<IEnumerable<Territorio>> GetTerritorios();
 
     }
 }

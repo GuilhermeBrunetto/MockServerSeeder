@@ -15,8 +15,14 @@ namespace API.Data.Repositories
 
         public async Task<ICollection<Acordo>> GetAcordosByProdutoAsync(int produtoId)
         {
-            return await _context.Acordos.Where(deal => deal.ProdutoId == produtoId)
-                .ToListAsync();
+            // LINQ Method
+            // return await _context.Acordos.Where(deal => deal.ProdutoId == produtoId)
+            // .ToListAsync();
+
+            // LINQ Query
+            return await (from acordo in _context.Acordos
+                         where acordo.ProdutoId == produtoId
+                         select acordo).ToListAsync();
         }
     }
 }

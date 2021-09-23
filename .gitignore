@@ -1,3 +1,5 @@
 node_modules
 database-ctrlVs.txt
 postman-wrong-response.json
+SQLite Queries/queryExamples.sql
+queryExamples.sql

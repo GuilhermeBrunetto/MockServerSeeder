@@ -24,7 +24,7 @@ namespace API.Controllers
         [HttpGet]
         public async Task<ActionResult> GetAllProdutos()
         {
-            var produtos = await _produtoRepository.GetAllAsync();
+            var produtos = await _produtoRepository.GetProdutos();
             return Ok(_mapper.Map<List<ProdutoDto>>(produtos));
         }
 
@@ -32,7 +32,7 @@ namespace API.Controllers
         [Route("{id}")]
         public async Task<ActionResult> GetProdutoById(int id)
         {
-            var produto = await _produtoRepository.GetByIdAsync(id);
+            var produto = await _produtoRepository.GetProdutoById(id);
             if (produto == null)
                 return NotFound("Couldn't find the specified produto, maybe it doesn't exist");
 
